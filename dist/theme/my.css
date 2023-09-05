@@ -1,0 +1,14 @@
+.reveal.overview .slides section > .text {
+    display: none;
+}
+
+.reveal.overview .slides section h2 {
+    margin-top: 46%;
+}
+
+ h1 {
+    font-family: var(--r-main-font);
+    font-size: var(--r-main-font-size);
+    font-weight: normal;
+    color: var(--r-main-color);
+}

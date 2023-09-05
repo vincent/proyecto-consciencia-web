@@ -8,16 +8,66 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+		<link rel="stylesheet" href="dist/theme/my.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
+		<!-- <h1>Hago y experimento</h1> -->
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section data-background-image="assets/book1/cover/row-1-column-1.jpg">
+						<h2>Bioma</h2>
+						<div class="text">Las selvas son un bioma muy especial porque tiene una característica que las hace únicas y uno de mis lugares favoritos. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-2-column-1.jpg">
+						<h2>Plantas</h2>
+						<div class="text">Algunos bosques y muchas selvas, me han hecho sentir en otras épocas o en películas maravillosas donde los dinosaurios aún existían. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-3-column-1.jpg">
+						<h2>Emoción</h2>
+						<div class="text">En la vida adulta seguimos jugando a través de un pasatiempo o hobby, eso que se realiza por placer y donde hacemos y experimentamos continuamente. Donde todo está bien y lo mejor es la sonrisa de nuestra cara que al hacerla se activan diferentes terminaciones nerviosas que hacen que se liberen varias sustancias en el cerebro para hacernos sentir bien. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-4-column-1.jpg">
+						<h2>Hormonas</h2>
+						<div class="text">Cuando nos acercamos en el microscopio a ver las células del páncreas se pueden observar varios tipos y el médico que las vió por primera vez dijo que era como una isla en el mar y le puso los islotes de Langerhans. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+				</section>
+				<section>
+					<section data-background-image="assets/book1/cover/row-1-column-2.jpg">
+						<h2>Animales</h2>
+						<div class="text">En la selva existen una gran cantidad de animales muy distintos entre ellos, como los tucanes, monos de muchos tipos, mapaches, cacomixtles, cocodrilos, jaguarundis y muchos otros. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-2-column-2.jpg">
+						<h2>Glándula</h2>
+						<div class="text">La glándula de este cuento es el páncreas que viene del griego. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-3-column-2.jpg">
+						<h2>Color</h2>
+						<div class="text">El color amarillo dentro de la teoría del color se considera un color cálido. Simboliza la alegría, inteligencia, optimismo y energía. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-4-column-2.jpg">
+						<h2>Valores</h2>
+						<div class="text">Una amistad es como cuando vas caminando por la playa y en el camino vas encontrando conchitas, caracoles, piedritas y cristales, y de repente, tu volteas y decides tomar una. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+				</section>
+				<section>
+					<section data-background-image="assets/book1/cover/row-1-column-3.jpg">
+						<h2>Insectos</h2>
+						<div class="text">Las hormigas son un grupo de animales muy estudiado por la gran cantidad de especies que existen en el mundo y por las maravillas que estos animales nos permiten observar de su forma de organizarse. ¿Quién no ha visto un hormiguero? <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-2-column-3.jpg">
+						<h2>Meditar</h2>
+						<div class="text">Guardianas de las Aves tiene un taller de Semillas de Esperanza, nos dió permiso de compartir una meditación, ponte cómoda, ponte cómodo para escucharla. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+					<section data-background-image="assets/book1/cover/row-3-column-3.jpg">
+						<h2>Selva Lacandona</h2>
+						<div class="text">La Selva Lacandona es un lugar hermoso en donde además de muchas plantas y animales, viven personas de diferentes pueblos indígenas, entre ellos, los mayas lacandones, que tenían un centro ceremonial en una isla llamada Lacan-Tun (“piedra grande” o “peñón”), nombre que fue cambiando hasta que se le puso ese nombre a la selva. <a href="assets/book1/long-text.html">ver mas</a></div>
+					</section>
+				</section>				
 			</div>
 		</div>
 
@@ -32,9 +82,21 @@
 			Reveal.initialize({
 				hash: true,
 
+				width: 600,
+				height: 600,
+
+				// Factor of the display size that should remain empty around
+				// the content
+				margin: 0,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.1,
+				maxScale: 4.0,
+
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown ]
 			});
+			setTimeout(_ => Reveal.toggleOverview(true), 20);
 		</script>
 	</body>
 </html>
